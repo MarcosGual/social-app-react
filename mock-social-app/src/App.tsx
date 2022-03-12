@@ -1,16 +1,19 @@
 import React from 'react';
 import './App.css';
+import BarraLateral from './BarraLateral';
 import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
 
       {/*App body*/}
-        {/*Sidebar*/}
+      <div className="app__body">
+        <BarraLateral />
         {/* Feed */}
         {/* Widgets*/}
+      </div>
     </div>
   );
 }
