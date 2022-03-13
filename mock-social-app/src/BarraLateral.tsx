@@ -23,7 +23,7 @@ export default function BarraLateral() {
             </div>
         </div>
 
-        <div className="barralateral__boton">
+        <div className="barralateral__abajo">
             <p>Reciente</p>
         </div>
     </div>

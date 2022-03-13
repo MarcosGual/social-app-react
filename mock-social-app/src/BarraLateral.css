@@ -1,4 +1,4 @@
-.barralateral{
+.barralateral {
     position: sticky;
     top: 80px;
     flex: 0.2;
@@ -7,11 +7,11 @@
     height: fit-content;
 }
 
-.barralateral__avatar{
+.barralateral__avatar {
     margin-bottom: 10px;
 }
 
-.barralateral__arriba{
+.barralateral__arriba {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     padding-bottom: 10px;
 }
 
-.barralateral__arriba > img{
+.barralateral__arriba>img {
     margin-bottom: -20px;
     width: 100%;
     height: 60px;
@@ -31,8 +31,46 @@
     border-top-right-radius: 10px;
 }
 
-.barralateral__stat{
+.barralateral__arriba>h4{
+    color: gray;
+    font-size: 12px;
+}
+
+.barralateral__arriba>h2{
+    font-size: 18px;
+}
+
+.barralateral__stat {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+.barralateral__stat>p {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.barralateral__stats{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.barralateral__numero{
+    font-weight: bold;
+    color: #0a66c2 !important; /*El importante es para que tenga predominancia el color sobre el de la clase superior*/
+}
+
+.barralateral__abajo{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
 }
