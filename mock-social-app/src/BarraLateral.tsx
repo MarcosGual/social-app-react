@@ -6,8 +6,8 @@ export default function BarraLateral() {
 
     const itemReciente = (topic) => ( //no siempre hace falta tener un componente, podemos tener una función que haga el renderizado
         <div className="barralateral__itemReciente">
-            <span className="barralateral__hash">#</span>
-            <p>{topic}</p>
+            <span className="barralateral__hash"># {topic}</span>
+            {/* <p>{topic}</p> */}
         </div>
     )
 
@@ -33,11 +33,11 @@ export default function BarraLateral() {
 
             <div className="barralateral__abajo">
                 <p>Reciente</p>
-                {itemReciente('react')}
-                {itemReciente('react')}
-                {itemReciente('react')}
-                {itemReciente('react')}
-                {itemReciente('react')}
+                {itemReciente('programación')}
+                {itemReciente('.NET Framework')}
+                {itemReciente('AngularJs')}
+                {itemReciente('ReactJs')}
+                {itemReciente('blogging')}
             </div>
         </div>
     );

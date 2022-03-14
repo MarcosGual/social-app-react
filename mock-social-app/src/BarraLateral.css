@@ -79,6 +79,7 @@
 
 .barralateral__itemReciente {
     display: flex;
+    flex-flow: row nowrap;
     font-size: 13px;
     color: gray;
     font-weight: bolder;
@@ -95,6 +96,7 @@
 }
 
 .barralateral__hash{
+    display: flex;
     margin-right: 10px;
     margin-left: 5px;
 }
