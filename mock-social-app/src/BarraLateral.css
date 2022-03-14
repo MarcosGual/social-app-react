@@ -98,3 +98,8 @@
     margin-right: 10px;
     margin-left: 5px;
 }
+
+.barralateral__abajo>p{
+    font-size: 13px;
+    padding-bottom: 10px;
+}

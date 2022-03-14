@@ -38,7 +38,6 @@ export default function BarraLateral() {
                 {itemReciente('react')}
                 {itemReciente('react')}
                 {itemReciente('react')}
-                {itemReciente('react')}
             </div>
         </div>
     );
