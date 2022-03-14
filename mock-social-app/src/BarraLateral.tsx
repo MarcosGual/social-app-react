@@ -5,7 +5,7 @@ import './BarraLateral.css'
 export default function BarraLateral() {
 
     const itemReciente = (topic) => ( //no siempre hace falta tener un componente, podemos tener una función que haga el renderizado
-        <div className="barralateral">
+        <div className="barralateral__itemReciente">
             <span className="barralateral__hash">#</span>
             <p>{topic}</p>
         </div>

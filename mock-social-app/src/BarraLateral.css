@@ -29,14 +29,15 @@
     height: 60px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    object-fit: cover;
 }
 
-.barralateral__arriba>h4{
+.barralateral__arriba>h4 {
     color: gray;
     font-size: 12px;
 }
 
-.barralateral__arriba>h2{
+.barralateral__arriba>h2 {
     font-size: 18px;
 }
 
@@ -52,7 +53,7 @@
     font-weight: 600;
 }
 
-.barralateral__stats{
+.barralateral__stats {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid lightgray;
@@ -61,16 +62,39 @@
     border-bottom-right-radius: 10px;
 }
 
-.barralateral__numero{
+.barralateral__numero {
     font-weight: bold;
-    color: #0a66c2 !important; /*El importante es para que tenga predominancia el color sobre el de la clase superior*/
+    color: #0a66c2 !important;
+    /*El importante es para que tenga predominancia el color sobre el de la clase superior*/
 }
 
-.barralateral__abajo{
+.barralateral__abajo {
     text-align: left;
     padding: 10px;
     border: 1px solid lightgray;
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+.barralateral__itemReciente {
+    display: flex;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.barralateral__itemReciente:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.barralateral__hash{
+    margin-right: 10px;
+    margin-left: 5px;
 }
