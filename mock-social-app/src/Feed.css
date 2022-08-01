@@ -13,11 +13,30 @@
     margin-bottom: 20px;
 }
 
-.feed_input{
+.feed__input{
     border: 1px solid lightgray;
     border-radius: 30px;
     display: flex;
+    flex-direction: column;
     padding: 10px;
     color: gray;
     padding-left: 15px;
+}
+
+.feed__input > form {
+    display: flex;
+    width: 100%;
+}
+
+.feed__input > form > input{
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}
+
+.feed__opcionesInput{
+    display: flex;
+    justify-content: space-evenly;
 }
