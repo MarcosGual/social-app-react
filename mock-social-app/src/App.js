@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import BarraLateral from './BarraLateral';
 import Header from './Header';
+import Feed from './Feed';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       {/*App body*/}
       <div className="app__body">
         <BarraLateral />
-        {/* Feed */}
+        <Feed />
         {/* Widgets*/}
       </div>
     </div>
