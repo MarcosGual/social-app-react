@@ -5,12 +5,27 @@ import ImageIcon from "@material-ui/icons/Image"
 import OpcionInput from "./OpcionInput";
 import { CalendarViewDay, EventNote, Subscriptions } from "@material-ui/icons";
 import Post from "./Post";
+import { db } from "./firebase";
 
 function Feed() {
     const [posts, setPosts] = useState([]);
+    useEffect(() => {
+        db.collection('posts').onSnapShot(snapshot => (
+            setPosts(snapshot.docs.map(doc => (
+                {
+                    id: doc.id,
+                    data: doc.data(),
+                }
+            )))
+        ));
+        return () => {
+            cleanup
+        };
+    }, [input]);
 
-    const enviarPost=(event)=>{
+    const enviarPost = (event) => {
         event.preventDefault();
+
 
     }
 
