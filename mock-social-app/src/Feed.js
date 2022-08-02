@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './Feed.css';
 import CreateIcon from "@material-ui/icons/Create";
 import ImageIcon from "@material-ui/icons/Image"
@@ -18,10 +18,7 @@ function Feed() {
                 }
             )))
         ));
-        return () => {
-            cleanup
-        };
-    }, [input]);
+    }, []);
 
     const enviarPost = (event) => {
         event.preventDefault();
