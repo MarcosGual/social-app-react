@@ -9,6 +9,11 @@ import Post from "./Post";
 function Feed() {
     const [posts, setPosts] = useState([]);
 
+    const enviarPost=(event)=>{
+        event.preventDefault();
+
+    }
+
     return (
         <div className="feed">
             <div className='feed__contenedorInput'>
@@ -16,7 +21,7 @@ function Feed() {
                     <CreateIcon />
                     <form>
                         <input type="text" />
-                        <button type="submit">Enviar</button>
+                        <button type="submit" onClick={enviarPost}>Enviar</button>
                     </form>
                     <div className="feed__opcionesInput">
                         <OpcionInput Icon={ImageIcon} titulo='Foto' color='#70B5F9' />
@@ -29,8 +34,8 @@ function Feed() {
             {posts.map((post) => (
                 <Post />
             ))}
-            <Post nombre='Marcos Gual' descripcion='Esto es una prueba'
-                mensaje='wow, esto funciona!' />
+            <Post nombre='Marcos Gual' descripcion='Probando probando'
+                mensaje='funcionanding...' />
         </div>
     );
 }
